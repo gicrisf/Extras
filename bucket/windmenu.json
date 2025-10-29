@@ -1,0 +1,27 @@
+{
+    "version": "0.5.0",
+    "description": "A minimalist Windows launcher",
+    "homepage": "https://github.com/gicrisf/windmenu",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/gicrisf/windmenu/releases/download/v0.5/windmenu-portable.zip",
+            "hash": "dc5d49467faa957ef5bae3da623f584c428ec5d33e6f877d4efb8a422076316c"
+        }
+    },
+    "bin": "windmenu.exe",
+    "shortcuts": [
+        [
+            "windmenu.exe",
+            "windmenu"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/gicrisf/windmenu/releases/download/v$version/windmenu-portable.zip"
+            }
+        }
+    }
+}
